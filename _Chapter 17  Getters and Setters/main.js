@@ -151,5 +151,5 @@ person.name="BOB";
 
 console.log (person.details);
 
-/* Being able to check if a value we assign to a property is good or nto is probably one 
+/* Being able to check if a value we assign to a property is good or not is probably one 
 of the best features that getters and setters bring to the table. */
