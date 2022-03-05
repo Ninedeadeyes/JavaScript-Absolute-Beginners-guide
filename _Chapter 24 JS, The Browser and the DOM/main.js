@@ -3,11 +3,6 @@
 
 JavaScript, the Browser, and the DOM
 
-In the following sections, you will learn about the mysterious data structure and 
-programming interface known as the Document Object Model (DOM). You'll learn what it is,
-why it is useful,and how it ties in to everything that you'll be doing in future tutorials.
-
-
 For starters, the stuff you put into your HTML documents revolves around HTML, CSS, and JavaScript.
  We treat these three things as equal partners in building up what you see in your browser:
 
@@ -34,17 +29,15 @@ interactivity they provided. People wanted to do more on a web document than jus
  sit back and observe what is going on
 
  JavaScript is now a perfectly capable language that allows you to add the sorts of interactive 
- things that people are looking for. All of these capabilities are accessed by the real star of this
-and the next many tutorials, the DOM.
-
+ things that people are looking for. All of these capabilities are accessed by the DOM.
 
 Meet the Document Object Model (aka the DOM)
 
-What your browser displays is a web document. More specifically, to summarize the entirety
-of the previous sections, what you see is a collision of HTML, CSS, and JavaScript working together 
-to create what gets shown.
+The Document Object Model (DOM) is a programming interface for web documents. 
+It represents the page so that programs can change the document structure, style, and content.
+The DOM represents the document as nodes and objects; that way, programming languages can 
+interact with the page.
 
-This structure is known (again) as the Document Object Model. Friends just call it the DOM. 
 Below is a very simplified view of what the DOM for our earlier example would look like:
 
                            WINDOWS   ( Not a true member of DOM but good for visualisation)
@@ -78,17 +71,14 @@ that is what we will be dealing with 99% of the time.
 Every HTML element you want to access has a particular type associated with it, 
 and all of these types extend from the Node base that make up all nodes. 
 
-
 Your HTML elements are at the end of a chain that starts with Node and continues
 with Element and HTMLElement before ending with a type (ie: HTMLDivElement,etc.)
-
 
 NODE   >    ELEMENT  >  HTMLELEMENT >  HTMLDListElement 
                                        HTMLBGSoundElement
                                        HTMLButtonElement
                                        etc etc etc
                                     
-
 The Window Object ( Not a true member of DOM )
 
 In the browser, the root of your hierarchy is the window object. The Window Object
@@ -101,8 +91,7 @@ and I will be focusing a lot of our time on:
 
 The document object is the gateway to all the HTML elements that make up what gets shown. 
 
-
-The thing to keep in mindthe document object does not simply represent a read-only version
+The thing to keep in mind is the document object does not simply represent a read-only version
 of the HTML document. It is a two-way street where you can read as well as manipulate 
 your document at will.
 
@@ -115,7 +104,7 @@ Outside of the very basic HTML needed via a script tag to get some JavaScript to
 in a HTML document, you can construct a fully functioning page using nothing but 
 JavaScript if you felt like it. 
 
-nother import aspect of the document object has to do with events. Ifyou want to react to 
+Other important aspect of the document object has to do with events. If you want to react to 
 a mouse click/hover, checking a checkbox, detecting when a key was pressed, and so on, 
 you will be relying on functionality the document object provides for listening to and reacting 
 to events.
